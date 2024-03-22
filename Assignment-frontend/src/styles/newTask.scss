@@ -1,0 +1,19 @@
+.newTask > section {
+    @include container(250px, unset, 2rem);
+    min-height: 40%;
+    background-color: $color2;
+    > form {
+      @include flexBox(column, center, flex-end, 0.5rem);
+      @include inputs;
+  
+      button {
+        @include styledText(0.9rem);
+        @include myButton(18.75rem, 1rem);
+      }
+    }
+  }
+
+  .buttonTask{
+    @include styledText(0.9rem);
+    @include myButton(18.75rem, 1rem);
+  }
